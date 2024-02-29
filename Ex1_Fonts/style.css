@@ -1,0 +1,20 @@
+@font-face {
+    font-family: Roboto-Light ;
+    src: url(fonts/Roboto/Roboto-Light.ttf);
+}
+
+@font-face {
+    font-family: Roboto-Black ;
+    src: url(fonts/Roboto/Roboto-Black.ttf);
+}
+
+h1{
+    font-family: Roboto-Black ,Roboto-Light, Verdana, arial;
+}
+
+p{
+    font-family: "kobe mono", "lucida console" , "courier new";
+    font-size: 18px ;
+    font-weight: bold;
+    font-style: italic;
+}

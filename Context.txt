@@ -1,0 +1,215 @@
+===================================================================================
+
+Bài 1: Fonts
+
+===================================================================================
+
+Bài 2: Borders
+    - Để định dạng các đường viền xung quanh các phần tử
+    - Một số thuộc tính border phổ biến:
+        + `border-style`: Xác định kiểu đường viền(vd: solid, dashed, dotted, double,...)
+        + `border-width`: Xác định độ rộng của đường viền
+        + `border-color`: Xác định màu của đường viền
+        + `border-radius`: Xác định độ cong các góc của đường viền
+
+===================================================================================
+
+Bài 3: Shadows
+    - Một số thuộc tính của shadow phổ biến
+        + `text-shadow`: Thêm hiệu ứng đổ bóng cho văn bản. Và chỉ áp dụng cho text.
+        + `box-shadow`: Thêm hiệu ứng đổ bóng cho văn bản (text) và các phần tử khác.
+
+===================================================================================
+
+Bài 4: Margins
+    - Để xác định khoảng cách giữa các phần tử.
+    - Nó sd để tạo ra khoảng trắng xung quanh 1 phần tử 
+      để kiểm soát khoảng cách giữa các phần tử trong trang web.
+    - Một số thuộc tính margin phổ biến:
+        + `margin`
+        + `margin-top`
+        + `margin-bottom`
+        + `margin-left`
+        + `margin-right`
+
+===================================================================================
+
+Bài 5: Float
+    - Để định vị 1 vị trí theo chiều ngang trong bố cục của trang web
+    - Khi sd, nó sẽ di chuyển 1 veef1 bên (phải, trái, trên, dưới) và 
+      các phần tử khác có thể dịch chuyển xung quanh nó.
+
+    - Vd: Khi gắn link ảnh trên paragraph thì ảnh sẽ chiếm toàn bộ trái phải,
+    khi sd float margin của ảnh sẽ thu gọn lại và paragraph sẽ bao quanh ảnh đó.
+
+===================================================================================
+
+Bài 6: Overflow
+
+    - Để xác định cách xử lý nội dung  khi nó vượt qua khỏi kích cỡ 
+      phần tử chứ nó.
+    - Một số thuộc tính overflow phổ biến:
+        + `visable`: Nội dung sẽ hiển thị ngoài khỏi khung của phần tử chứa, nếu 
+                     nó vượt quá kích cỡ
+
+        + `hidden` : Bất kì phần của nội dung vượt khỏi kích thước của phần tử chứa,
+                     sẽ bị ẩn đi
+
+        + `scroll`: Một thanh cuộn sẽ được hiển thị nếu nội dung vượt khỏi phần tử chứa
+                    người dùng có thể cuộn để xem nội dung ẩn
+        
+        + `auto`: Nếu nội dung vượt quá kích thước, 1 thanh cuộn sẽ được hiện.
+                  Nếu nội dung không vượt quá, không có thanh cuộn được hiển thị.
+        
+        + `clip`: Nó kết hợp với  `overflow-clip-margin và chỉnh kích thước để nội dung 
+                  có thể vượt qua khỏi khung chứa (khá stupid)
+
+===================================================================================
+
+Bài 7: Display
+    - Để xác định cách phần tử HTML hiển thị trên trang web
+    - Một số thuộc tính display phổ biến:
+      + `block`: Phần tử sẽ hiển thị như 1 khối và chiếm toàn bộ chiều rộng của phần tử cha.
+
+      + `inline`: Phần tử sẽ hiển thị 1 phần của dòng. Chỉ chiếm chiều rộng phù hợp với
+                  với kích thước của nó. 
+                  Nhưng sẽ không thể chỉnh width và height
+
+      + `inline-block`: Giống như inline. Nhưng có thể chỉnh đc width and height.
+
+      + `flex`: Đưa ra mô hình linh hoạt, cho phép quản lý và sắp xếp các phần tử con theo các chiều.
+                Thưởng để trong tk cha và điều chỉnh tk con
+
+      + `none`: Phần tử sẽ không hiển thị trên web. Nó được "ẩn đi"
+
+      + `grid`: Đưa ra mô hỉnh lưới (grid), cho phép quản lý và sắp xếp các phần tử con
+                theo hàng và cột
+
+      *** Chú ý ***
+      visibility: Để kiểm soát việc hiển thị hoặc 1 phần tử trên trang web.
+        + `hidden`: Sẽ ẩn phẩn tử trên trang web.
+
+      So sánh: visibility: hidden và display: none
+      hidden: Ẩn nhưng vẫn chiếm diện tích của  web.
+      none: Ẩn nhưng không chiếm diện tích của web
+
+===================================================================================
+
+Bài 8: Positions
+    - Để xác định cách 1 phần tử đc định bị trong bổ cục của trang web.
+    - Một số thuộc tính của positions:
+      + `static`: Sẽ xuất hiện theo thứ tự bình thường của trang.
+
+      + `relative`: Đc đặt tương đối so với vị trí mà nó nằm trong bố cục bình thường.(nó sẽ so với chính nó).
+                    Có thể áp dụng với top,right,left,bottom
+
+      + `absolute`: Nó sẽ bị loại bỏ khỏi dòng chảy thông thường của trang
+                    Đặt tuyệt đối so với phần tử cha gần nhất có `position, relative, absolute, fixed, sticky`.
+                    Nếu không có phần tử cha như trên, nó sẽ đc đặt tuyệt đối so với thẻ <html>
+
+      + `fixed`: Bị loại khỏi dòng chảy thông thường
+                 Đc đặt tuyệt đối so với của sổ trình duyệt
+                 Nó sẽ không dịch chuyển khi bạn cuộn trang.
+                 Phụ thuộc vào html
+            
+      + `sticky`: Kết hợp `relative` và `fixed`
+                  Đc đặt tương đối so với div container gần nhất (phụ thuộc và hoạt động container)
+                  Khi cuộn xuongs, top=0px thì nó chuyển sang fixed nhưng vẫn phụ thuộc vào container.
+
+===================================================================================
+
+Bài 9: Background Images
+    - Đặt hình ảnh làm nền cho 1 phần tử HTML
+    - Cách thuộc tính thông thường:
+      + `url`: Chỉ định đường dẫn đến hình ảnh. Nơi cung cấp đường dẫn.
+      
+      + `background-repeat`= repeat :Các giá trị có thể repeat. 
+                           = no repeat :Không lặp lại.
+
+      + `background-size`: Xác định kích thước của ảnh 
+                          = auto :Kích thước giữa nguyên
+                          = cover :Phóng to hoặc thu nhỏ để che phủ toàn phần tử.
+                          = contain :Phóng to or thu nhỏ để nó vừa với kích thước 
+                                      mà không làm biến đổi tỉ lệ    
+
+      + `background-position`: Đặt vị trí hình ảnh bằng các giá trị pixel hoặc %
+                              = center :Đặt hình ảnh ở giữa trang web.
+
+===================================================================================
+
+Bài 10: Combinations (Đọc trong bài tập cho nhanh).
+
+  Used to define relationships between listed selectors.
+
+===================================================================================
+
+Bài 11: Psedo-classes (Lớp giả định)
+    - Là các lựa chọn đặc biệt để áp dụng các quy tắc cho các phần tử 
+      trong trạng thái hay vị trí cụ thể.
+    - Một số psedo-classes phổ biến:
+        :hover :Lựa chọn phẩn tử khi con trỏ chuột nằm trên đó
+
+        :active :Lựa chọn phần tử đang được kích hoạt(được nhấp chuột)
+
+        :focus :Lựa chọn phần tử được tập trung, đc sử dụng trong form
+
+        :nth-child(n) :Lựa chọn phần tử con thé n trong phần tử cha 
+
+        :first-child, :last-child :Lựa chọn phần tử con đầu tiên và cuối cùng của thằng cha
+
+        :nth-of-type(n) :Lựa chọn phần tử con thứ n của 1 loạt cụ thể
+
+===================================================================================
+
+Bài 12: Psedo-elements (Phần tử giả định)
+    - Khái niện tương tụ như psedo-classes, nhưng chúng đc sử dụng để chọn và kiểu dáng
+      các phần tử hay 1 phần nào đó của 1 phần tử thực tế. Được kí kiệu bằng (::)
+    - Một số Psedo-elements phổ biến:
+      ::before :Thêm 1 phần tử giả định vào phần tử đc chọn, đặt trc nội dung của nó.
+
+      ::after :Thêm 1 phần tử giả định vào phần tử đc chọn, đặt sau nội dung của nó
+
+      ::first-line :Chọn và kiểu dáng dòng đầu tiên của 1 phần tử văn bản
+
+      ::first-letter :Chọn và kiểu dáng chữ cái đầu tiên của 1 phần tử văn bản
+
+      ::selection :Kiểu dáng phần tử văn bản khi mà được bôi đen.
+
+===================================================================================
+
+Bài 19: Flexbox 
+    - Để sắp xếp các phần tử trên 1 trục linh hoạt và chia sẻ không gian hiệu quả.
+    - Cung cấp 1 cách linh hoạt và dễ dàng sử dụng để tổ chức các phần tử trong 1 container
+      giúp tạo ra các bố cục đáp ứng và dễ bảo trì.
+      + display: flex
+
+      + flex-direction: Xác định hướng của trục chính
+            | row | row-reverse | column | comun-reverse |
+
+      + justify-content: Điều chỉnh cách phần tử chấp nhận không gian trên trục chính
+            | flex-start | flex-end | center | space-between | space-around | space-evenly |
+
+      + align-items: Điều chỉnh cách phần tử chấp nhận không gian trên trục phuk
+            | flex-start | flex-end | center | baseline | stretch |
+
+      + flex: Xác định kích thước linh hoạt của phần tử trong container
+
+      + align-self: Điều chỉnh cách 1 phần tử cụ thể chấp nhận không gian trên trục phụ
+            | auto | flex-start | flex-end | center | baseline | stretch |
+ 
+===================================================================================
+
+Bài 21: Animations
+
+===================================================================================
+
+
+===================================================================================
+
+
+===================================================================================
+
+
+===================================================================================
+
+

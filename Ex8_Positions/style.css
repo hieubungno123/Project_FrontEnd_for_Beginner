@@ -1,0 +1,38 @@
+/* 
+    position:
+        relative = positioned relative to where it normally is
+        fixed = positioned relative to the viewport
+        absolute = positioned relative to nearest ancestor
+        sticky = positioned based on scroll position
+        static = default position for an element
+
+        ancestor
+*/
+
+#box1{
+    width: 200px;
+    height: 200px;
+    background-color: aquamarine;
+    
+    /* position: relative;
+    top: 100px;
+    left: 100px; */
+
+    /* position: fixed; */
+    /* right: 00px; */
+    /* bottom: 00px;  */
+    /* position: static; */
+    position: sticky;
+    top: 0;
+}
+
+#box2{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(68, 36, 212);
+    
+    position: relative;
+    top: 50px;
+    left: 50px;
+    
+}

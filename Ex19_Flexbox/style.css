@@ -1,0 +1,39 @@
+.container{
+    display: flex;
+    border: 10px solid black;
+    height: 90vh;
+    /* flex-direction: column-reverse; */
+    /* justify-content: flex-start; */
+    /* align-items: center; */
+    /* align-content: flex-start;
+    flex-wrap: wrap; */
+    column-gap: 2em;
+    row-gap: 2em;
+
+}
+
+.box{
+    width: 150px;
+    height: 150px;
+    border-radius: 5px;
+    font-size: 8em;
+    text-align: center;
+}
+
+#box1{
+    align-self: end;
+    background-color: red;
+}
+
+#box2{
+    order: 1;
+    background-color: aqua;
+}
+
+#box3{
+    background-color: greenyellow;
+}
+
+#box4{
+    background-color: yellow;
+}

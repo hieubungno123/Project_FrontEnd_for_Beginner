@@ -1,0 +1,39 @@
+a:link{
+    color: rgb(8, 110, 110);
+}
+
+a:hover{
+    color: bisque;
+    font-size: 1em;
+}
+
+a:active{
+    color: brown;
+    font-size: 1.5em;
+}
+
+a:visited{
+    color: chartreuse;
+}
+
+/* li:hover{
+    background-color: aqua;
+}
+
+li:not(:hover){
+    background-color: rgb(199, 199, 199);
+} */
+
+li:nth-child(odd){
+    background-color: aquamarine;
+}
+
+#greeting p{
+    background-color: rgb(68, 100, 243);
+    padding: 10px;
+    display: none;
+}
+
+#greeting:hover p{
+    display: block;
+}

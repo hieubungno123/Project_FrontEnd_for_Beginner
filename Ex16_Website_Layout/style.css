@@ -1,0 +1,61 @@
+/*  semantic tags = Keep your content organized
+                    Better for Search, Engine, Optimization
+                    Assist sceen readers and 
+                    other tech for accessibility
+        
+    headers> = introductory content
+    nav>     = navigation bar, links
+    main>    = main content (section, aside, article, div)
+    section> = dependent content
+    aside>   = side content
+    article> = independent content
+    footer>  = closing content
+*/
+*{
+    box-sizing: border-box;
+
+}
+body{
+    margin: 0px;
+}
+
+header{
+    background-color: rgb(209, 206, 203);
+    text-align: center;
+    padding: 25px;
+}
+
+.navbar{
+    background-color: rgb(39, 37, 37);
+    height: 50px;
+}
+
+h2{
+    text-align: center;
+}
+
+aside{
+    width: 25%;
+    float: left;
+    padding: 10px;
+}
+
+section{
+    width: 50%;
+    float: left;
+    padding: 10px;
+}
+
+article{
+    width: 25%;
+    float: left;
+    padding: 10px;
+}
+
+footer{
+    display: block;
+    clear: both;
+    background-color: rgb(218, 210, 210);
+    text-align: center;
+    padding: 25px;
+}

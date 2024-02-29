@@ -1,0 +1,33 @@
+/* 
+    display = property specifies if/how
+              an element is displayed
+    
+    block-level = start on a new line, take up the full width available
+                  (h1, div, p, form, header, footer)
+                  
+    inline = do not start on a new lone, width is limited to what is needed
+             (span, a, img)
+*/
+
+#div{
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    /* display: grid; */
+    /* display: block; */
+    display: inline-block;
+    /* display: inline; */
+    /* display: none; */
+    visibility: hidden;
+}
+
+span{
+    background-color: aqua;
+    width: 100px;
+    height: 100px;
+    /* display: block;    */
+    /* display: inline; */
+    display: inline-block;
+    /* display: none; */
+
+}

@@ -1,0 +1,13 @@
+/* body{
+    border: 3px solid;
+    display: flow-root;
+} */
+
+#image1{
+    float: right;
+    margin-left: 10px;
+}
+
+#image2{
+    float: right;
+}

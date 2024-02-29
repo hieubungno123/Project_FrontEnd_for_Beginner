@@ -1,0 +1,55 @@
+/*    
+    transform = CSS property lét you rotate,
+                scale, skew, or translate an element
+*/
+
+body{
+    margin: 0;
+}
+
+.box{
+    width: 250px;
+    height: 250px;
+    font-size: 13em;
+    border: 5px solid;
+    text-align: center;
+    border-radius: 15px;
+
+    transform: translateX(100px) rotateZ(45deg) scale(0.5);
+
+    /* transform: translateX(100px); */
+    /* transform: translateY(100px); */
+    /* transform: translate(50px,50px);
+
+    transform: rotateX(45deg); */
+    /* transform: rotatey(45deg); */
+    /* transform: rotateZ(45deg); */
+
+    /* transform: scale(3 ,3); */
+    /* transform: scaleX(1.1);  */
+    /* transform: scaley(1.1);  */
+    /* transform: scaleX(0.4);  */
+
+    /* transform: skewX(135deg); */
+    /* transform: skewY(135deg); */
+    /* transform: skew(1,1.5); */
+
+    /* transform:  translateX(100%) rotateZ(90deg) scale(0.5); */
+}
+
+#box1{
+    background-color: aqua;
+}
+
+#box2{
+    background-color: red;
+}
+
+#box3{
+    background-color: lime;
+}
+
+img{
+    transform: translateX(100%) rotateZ(180deg) scaleX(2);
+}
+
